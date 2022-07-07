@@ -26,7 +26,7 @@ console.log(corFavorita('vermelho'));
 console.log(corFavorita());
 
 addEventListener('click', function() {
-    console.log('clicou');
+    console.log('Bruno tozi Damiao');
 }) 
 
 function terceiraIdade(idade) {
@@ -45,20 +45,15 @@ console.log(terceiraIdade('a'))
 
 
 // Crie uma função para verificar se um valor é Truthy
-function verificador(éVerdade) {
-    if (éVerdade === 'Sim') {
-        return true
-    } else {
-        return false
-    }
+function verificador(dado) {
+    return !!dado
 }
 
 console.log(verificador('Sim'));
 // Crie uma função matemática que retorne o perímetro de um quadr
 // lembrando: perímetro é a soma dos quatro lados do quadrado
-function quadrado(lado1, lado2, lado3, lado4) {
-    var perimetro = lado1+lado2+lado3+lado4;
-    return perimetro
+function quadrado(lado) {
+    return lado * 4
     
 }
 
@@ -98,17 +93,20 @@ console.log(tipoDado('1'));
 // utilize essa função para mostrar no console o seu nome complet
 // quando o evento 'scroll' ocorrer.
 
+addEventListener('clicl', function() {
+    console.log('Bruno tozi Damiao');
+});
+
 // Corrija o erro abaixo
-
+var totalPaises = 193;
 function precisoVisitar(paisesVisitados) {
-    var totalPaises = 193;
 
-
+    return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`
+   }
    function jaVisitei(paisesVisitados) {
     return `Já visitei ${paisesVisitados} do total de ${totalPaises}`
    }
-   return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`
-}
-
-precisoVisitar(20);
-jaVisitei(20);
+   
+   console.log(precisoVisitar(20));
+   console.log(jaVisitei(20));
+   
